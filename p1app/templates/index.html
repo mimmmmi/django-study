@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    {% extends 'base.html' %}
+    {% load static %}
+    {% block contents %}
+    <h1>h</h1>
+    <img src="{% static 'image/im.png' %}" alt="">
+
+    {% if i.pic %}
+        <p><img src="{{i.pic.url}}"></p>
+    {%endif%}
+
+    <form action="">
+    </form>
+    <!-- {{all_pi}} -->
+    {%endblock%}
+    
+</body>
+</html>
